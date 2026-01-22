@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeiros passos com DOM</title>
+    <style>
+        body {
+            background-color: darkblue;
+            color: white;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 1.2em;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Iniciando estudos com DOM</h1>
+
+    <p id="parag">Aprendendo a <strong>utilização do DOM</strong> dentro do JavaScript</p>
+
+    <div class="botao">Clique aqui!</div>
+
+    <script>
+        var corpo = window.document.body
+
+        var par = window.document.getElementsByTagName('h1')[0]
+
+        var texto = window.document.getElementById('parag')
+
+        var div = window.document.querySelector('div.botao')
+
+        corpo.style.backgroundColor = 'black'
+
+        par.style.fontSize = '3em'
+
+        texto.style.color = 'pink'
+
+        div.style.color = 'red'
+        div.style.textDecoration = 'underline'
+        div.style.cursor = 'pointer'
+    </script>
+</body>
+</html>

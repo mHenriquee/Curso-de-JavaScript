@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos DOM</title>
+    <style>
+
+        * {
+            padding: 0px;
+            margin: 0px;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        div#area {
+            background-color: darkblue;
+            color: white;
+            font-size: 2em;
+            border: 2px solid black;
+            text-align: center;
+            line-height: 350px;
+            height: 400px;
+            width: 100vw;
+        }
+    </style>
+</head>
+<body>  <!-- onclick=clicar()-->
+    <div id="area">
+        <p>Interaja!</p>
+    </div>
+    
+    <script>
+        var botao = window.document.querySelector('div#area')
+        // adicionando a variavel um evento de Listener que realiza o check se o usuario está fazendo a ação, inves de colocar no HTML
+        botao.addEventListener('click', clicar)
+        botao.addEventListener('mouseenter', entrar)
+        botao.addEventListener('mouseout', sair)
+        
+        function clicar() {
+            botao.innerText = 'Clicou!'
+            botao.style.backgroundColor = 'purple'
+            botao.style.transition = '0.5s'
+        }
+
+        function entrar() {
+            botao.innerText = 'Entrou'
+            botao.style.backgroundColor = 'blue'
+            botao.style.transition = '0.5s'
+        }
+
+        function sair() {
+            botao.innerText = 'Saiu'
+            botao.style.backgroundColor = 'darkblue'
+            botao.style.transition = '0.5s'
+        }
+
+    </script>
+
+</body>
+</html>

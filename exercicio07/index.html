@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Somando Valores</title>
+    <style>
+        * {
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+        input#text1, #text2 {
+            height: 30px;
+        }
+
+        input#soma {
+            margin-left: 10px;
+            padding: 8px;
+            width: 100px;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Somando Valores</h1>
+    
+    <div id="quadro">
+        <input type="number" name="" id="text1"> +
+        <input type="number" name="" id="text2">
+        <input type="button" value="Somar" id="soma" onclick="somar()">
+    </div>
+
+    <div id="result">
+        <p>Resultado:</p>
+    </div>
+
+    <script>
+
+    function somar() {    
+        var text1 = window.document.querySelector('input#text1')
+        var text2 = window.document.querySelector('input#text2')
+        var resultado = window.document.querySelector('div#result')
+
+        // Transformando o valor que esta dentro da variavel text1 em numero
+        var n1 = Number(text1.value)
+        var n2 = Number(text2.value)
+        var soma = (n1 + n2)
+
+        resultado.innerHTML = (`A soma dos valores ${n1} e ${n2} é ${soma}`)
+
+        resultado.style.marginTop = '10px'
+    }    
+    </script>
+</body>
+</html>
