@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Você é Estrangeiro?</title>
+    <style>
+
+    </style>
+</head>
+<body>
+    <h1>Qual país você reside atualmente?</h1>
+    <p>Por favor digite abaixo qual país você mora atualmente</p>
+    
+    <input type="text" name="txtp" id="txtp">
+    <input type="button" value="Verificar" id="botao" onclick="verifica()">
+    <div id="resposta">
+
+    </div>
+
+    <script>
+        function verifica() {
+            var reside = window.document.querySelector('input#txtp')
+            var resposta = window.document.querySelector('div#resposta')
+            var pais = (reside.value)
+
+            resposta.innerHTML = `<p>Você reside em ${pais}<p>`
+            
+            if (pais != 'Brasil') {
+                resposta.innerHTML += `<p>Você é Estrangeiro</p>`
+            } else {
+                resposta.innerHTML += `<p>Você é Brasileiro</p>`
+            }
+
+
+        }
+    </script>
+    
+</body>
+</html>
