@@ -9,6 +9,7 @@
 
 body, html {
     color: white;
+    background-color: darkblue;
 }
 
 header {
@@ -19,7 +20,7 @@ header {
 section {
     background-color: white;
     padding: 20px;
-    margin: 10px auto;
+    margin: 20px auto;
     width: 90vw;
     border-radius: 5px;
     box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.582);
@@ -27,10 +28,19 @@ section {
 }
 
 div {
-    text-align: center;
-    margin-bottom: 6px;
-    padding: 5px;
+    text-align: justify;
+    margin-bottom: 10px;
     font-size: 1.2em;
+}
+
+div#texto {
+    line-height: 40px;
+}
+
+input#verificar {
+    padding: 10px;
+    width: 150px;
+    margin-top: 10px;
 }
 
 footer {
