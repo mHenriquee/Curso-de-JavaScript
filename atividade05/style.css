@@ -1,0 +1,43 @@
+@charset "UTF-8";
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body, html {
+    color: white;
+    background-color: darkblue;
+}
+
+header {
+    text-align: center;
+    font-size: 1.3em;
+    margin:10px auto 20px auto;
+}
+
+section {
+    background-color: white;
+    padding: 20px;
+    margin: 10px auto;
+    width: 90vw;
+    border-radius: 5px;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.582);
+    color: black;
+    display: block;
+}
+
+div {
+    text-align: start;
+    margin-bottom: 6px;
+    padding: 10px;
+    line-height: 30px;
+    font-size: 1.2em;
+}
+
+footer {
+    text-align: center;
+    font-style: italic;
+}
